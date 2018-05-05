@@ -1,0 +1,8 @@
+language: c
+env:
+  - TEST_DIR="longest-cycle/src"
+  - TEST_DIR="three-coloring/src"
+  
+script:
+  - cd "$TEST_DIR"
+  - gcc -std=c11 -coverage -O0 main.c -o main
